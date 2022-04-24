@@ -14,15 +14,17 @@
 
         <!-- SQL dialect -->
         <property name="dialect">org.hibernate.dialect.MySQL57Dialect</property>
+        
+        <property name="hbm2ddl.auto">update</property>
 
         <!-- Echo all executed SQL to stdout -->
-        <property name="show_sql">true</property>
+        <!-- <property name="show_sql">true</property>-->
         <property name="hibernate.format_sql">true</property>
         
          
         
         <!-- Use annotation based mapping --> 
-        <mapping class ="entity.Message" />
+        <mapping class ="entity.Person" />
         
     </session-factory>
 </hibernate-configuration>
