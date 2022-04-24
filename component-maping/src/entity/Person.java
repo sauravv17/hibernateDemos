@@ -22,11 +22,6 @@ public class Person {
 	String name;
 	
 	@Embedded
-	@AttributeOverrides( {
-		@AttributeOverride(name="street",column=@Column(name="home_street")),
-		@AttributeOverride(name="city",column=@Column(name="home_city")),
-		@AttributeOverride(name="zipcode",column=@Column(name="home_zipcode")),
-	})
 	private Address homeAddress;
 	
 	@Embedded
